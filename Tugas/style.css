@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    background-color: rgb(0, 2, 24);
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding: 30px;
+    overflow: hidden;
+    background: linear-gradient(to top, rgb(0, 2, 24), black);
+}
+
+.navbar span {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    color: white;
+    padding: 3px 10px;
+}
+
+nav li {
+    padding: 3px 10px;
+    margin: 0px 10px;
+    float: left;
+}
+
+nav a {
+    padding: 7px 0px ;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: aqua;
+    text-shadow:0 0 10px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua;
+    border-bottom: 3px solid aqua;
+}
+
+
+nav a.active {
+    color: aqua;
+    text-shadow:0 0 10px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua;
+    border-bottom: 3px solid aqua;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 35px 1px rgba(0, 255, 255, 0.39);
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 35px 1px aqua;
+    transition: transform 0.5s ease;
+}
+
+.kontak a {
+    margin: 0px 10px;
+    font-size: 25px;
+    color: aqua;
+}
+
+.home {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    margin: 0px 200px;
+}
+
+.biodata {
+    margin: 0px 80px;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.biodata span {
+    font-weight: 600;
+}
+.nama {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.job {
+    color: aqua;
+    position: relative;
+    bottom: 15px;
+}
+
+.fa-brands {
+    margin-top: 20px;
+    opacity: 0.5;
+    transition: transform 0.3s ease;
+}
+
+.fa-brands:hover {
+    opacity: 1;
+    text-shadow:0 0 10px aqua,
+                0 0 20px aqua,
+                0 0 40px aqua;
+    transform: scale(1.2);
+}
+
+.about{
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.about h1 {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.isi {
+    background: linear-gradient(to top, rgb(0, 2, 24), black);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 200px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.isi h2 {
+    font-family: "Archivo Black", sans-serif;
+}
+
+.isi p{
+    font-weight: 700;
+    color: aqua;
+    width: 200px;
+    padding: 7px 17px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.isi p:hover {
+    color: black;
+    background-color: aqua;
+    transition: 0.3s ease;
+    translate: 0px -5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    color: white;
+    padding: 30px 0px;
+}
+
+.contact h1 {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.hubungi {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    color: white;
+}
+
+input {
+    width: 250px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px 20px;
+    background-color: rgb(0, 2, 24);
+    border: 1px solid aqua;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+}
+
+textarea {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px 20px;
+    background-color: rgb(0, 2, 24);
+    border: 1px solid aqua;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+}
+
+button {
+    width: 100px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px 15px;
+    background-color: aqua;
+    border: 1px solid aqua;
+    color: rgb(0, 2, 24);
+    font-family: "Archivo Black", sans-serif;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+button:hover {
+    color: aqua;
+    background-color: rgb(0, 2, 24);
+    transition: 0.3s ease;
+    translate: 0px -5px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.cv {
+    height: 367px;
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    color: white;
+    padding: 30px 0px;
+}
+
+.cv h1 {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+.footer {
+    border-top: 1px solid aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 15px 15px;
+    color: white;
+    background-color: black;
+}
