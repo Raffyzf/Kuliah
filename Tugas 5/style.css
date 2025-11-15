@@ -1,0 +1,393 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(26, 26, 141);
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    width: 100% ;
+    padding: 10px 50px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(26, 26, 141);
+}
+
+.navbar li {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 0px 5px;
+}
+
+.logo {
+    height: 30px;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.navbar li:hover {
+    background-color: rgb(255, 123, 0);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+h2 {
+    padding-bottom: 5px;
+    border-bottom: 3px solid orange;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.foto img {
+    margin-right: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    font-size: larger;
+}
+
+.profil span {
+    color: red;
+}
+
+.profil button {
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(43, 43, 216);
+    transition: 0.3s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.profil button:hover {
+    background-color: rgb(255, 123, 0);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.profil button a {
+    text-decoration: none;
+    color: white;
+}
+
+.program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    row-gap: 20px;
+    font-size: larger;
+}
+
+.program .prodi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.prodi ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.program img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.ukm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: larger;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.unit {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.unit img {
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 2px 1px 5px 1px rgb(146, 146, 146);
+    margin: 10px 50px;
+    height: 150px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed {
+    font-size: xx-large;
+    margin: 100px 0px;
+}
+
+.sosmed a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px 1px rgb(146, 146, 146);
+    margin: 0px 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.sosmed a:hover {
+    box-shadow: 2px 1px 5px 1px rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-whatsapp {
+    color: rgb(0, 182, 0);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: rgb(26, 26, 141);
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+.garisTiga {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.garisTiga span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(26, 26, 141, 0.884);
+        width: 200px;
+        border-radius: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 10px;
+        padding: 10px 20px;
+        display: none;
+}
+
+    .garisTiga {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 200;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        background-color: rgb(26, 26, 141);
+        padding: 20px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .navbar li {
+        padding: 10px 15px;
+        margin: 5px 3px;
+    }
+
+    .home {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .foto img {
+        margin: 0;
+        height: 200px;
+    }
+
+    .profil {
+        font-size: medium;
+    }
+
+    .program {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .program .prodi {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .program img {
+        height: 200px;
+    }
+
+    .ukm {
+        height: auto;
+        padding: 60px 20px;
+        margin-top: 50px;
+    }
+
+    .unit img {
+        height: 120px;
+        margin: 20px;
+    }
+
+    .sosmed {
+        font-size: x-large;
+        margin: 30px 0;
+    }
+
+    .sosmed a {
+        margin: 0 15px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .navbar li {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .foto img {
+        height: 150px;
+    }
+
+    .profil h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .profil h3 {
+        font-size: 14px;
+    }
+
+    .unit img {
+        height: 100px;
+        padding: 10px 20px;
+    }
+
+    .sosmed {
+        font-size: large;
+    }
+}
