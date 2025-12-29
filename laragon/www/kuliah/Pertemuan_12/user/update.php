@@ -41,10 +41,6 @@ if(isset($_POST['update'])){
                                 <label class="form-label">Username</label>
                                 <input type="text" name="username" class="form-control"value="<?= $data['username']; ?>" required>
                             </div>
-                            <div class="mb-3">
-                                <label class="form-label">Username</label>
-                                <input type="password" name="password" class="form-control"value="<?= $data['password']; ?>" required>
-                            </div>
                             <div class="d-flex justify-content-between">
                                 <a href="users.php" class="btn btn-secondary">
                                     Kembali
@@ -62,3 +58,4 @@ if(isset($_POST['update'])){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
