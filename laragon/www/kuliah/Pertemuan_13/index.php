@@ -21,6 +21,7 @@ $result = mysqli_query($koneksi, $query);
         <h3>Data Pendaftaran</h3>
         <a href="create-pendaftaran.php" class="btn btn-primary">Tambah Pendaftaran</a>
     </div>
+    <button onclick="window.print()" class="btn btn-danger mb-3">Export PDF</button>
     <table class="table table-bordered table-striped">
         <thead class="table-light">
             <tr>
@@ -56,3 +57,4 @@ $result = mysqli_query($koneksi, $query);
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
